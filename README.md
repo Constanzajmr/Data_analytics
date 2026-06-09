@@ -11,9 +11,9 @@ Sistema computacional que resuelve tres decisiones simultáneas en una red logí
 ```
 logistics-challenge/
 ├── notebooks/
-│   ├── modulo_01.ipynb          # M01: Optimización de Transporte
-│   ├── modulo_02.ipynb          # M02: Machine Learning
-│   ├── modulo_03.ipynb          # M03: Agente Inteligente
+│   ├── modulo_01.ipynb             # M01: Optimización de Transporte
+│   ├── modulo_02.ipynb             # M02: Machine Learning
+│   ├── modulo_03_conectado.ipynb   # M03: Agente Inteligente
 │   └── colab_modulo_03.ipynb    # M03: versión Colab autocontenida
 ├── src/
 │   ├── optimization.py          # M01: Problema de Transporte con OR-Tools
@@ -32,7 +32,7 @@ logistics-challenge/
 
 ## Cómo Reproducir
 
-### Opción A — Google Colab (recomendado)
+### Opción A — Google Colab (recomendado y usado para la creación de este código)
 1. Abrir cada notebook en [colab.research.google.com](https://colab.research.google.com)
 2. `Archivo → Subir notebook` → seleccionar el `.ipynb`
 3. `Runtime → Run all` — la primera celda instala dependencias automáticamente
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 # 3. Ejecutar módulos
 python src/optimization.py   # Módulo 01
 python src/ml_models.py      # Módulo 02
-python src/agent.py          # Módulo 03
+python src/agent.py          # Módulo 03 (conectado)
 
 # 4. Correr todos los tests
 python -m pytest tests/ -v
@@ -164,7 +164,7 @@ python -m pytest tests/ -v
 
 ---
 
-## Decisiones de Diseño
+## Decisiones de Diseño en términos de aplicación
 
 **¿Por qué OR-Tools GLOP?**
 Solver lineal nativo de OR-Tools, más rápido que CBC para problemas de transporte continuos sin variables enteras.
