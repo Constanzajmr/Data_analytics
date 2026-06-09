@@ -14,7 +14,7 @@ logistics-challenge/
 │   ├── modulo_01.ipynb             # M01: Optimización de Transporte
 │   ├── modulo_02.ipynb             # M02: Machine Learning
 │   ├── modulo_03_conectado.ipynb   # M03: Agente Inteligente
-│   └── colab_modulo_03.ipynb    # M03: versión Colab autocontenida
+│   
 ├── src/
 │   ├── optimization.py          # M01: Problema de Transporte con OR-Tools
 │   ├── ml_models.py             # M02: Regresión + Clasificación + SHAP
